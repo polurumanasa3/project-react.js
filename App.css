@@ -1,0 +1,134 @@
+/* Global styles for all pages */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Fix background color for Signup page */
+.app-container.page-signup {
+  background-color: #ffffff !important;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e40af; /* Indigo-800 */
+}
+
+.page-intro {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #4b5563; /* Gray-600 */
+}
+
+.features {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  flex: 1;
+  background-color: #e0e7ff; /* Indigo-100 */
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(99,102,241,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #4338ca; /* Indigo-700 */
+}
+
+.feature-card p {
+  color: #3730a3; /* Indigo-900 */
+}
+
+.home-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-link-button {
+  background-color: #4338ca; /* Indigo-700 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.home-link-button:hover {
+  background-color: #6366f1; /* Indigo-500 */
+}
+
+/* Form styles */
+
+.form-container, .form-container-horizontal, .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-label, .form-label-horizontal {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #1e40af; /* Indigo-800 */
+}
+
+.input-field, .input-field-horizontal {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1; /* Gray-300 */
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.input-field:disabled, .input-field-horizontal:disabled {
+  background-color: #e0e7ff; /* Indigo-100 */
+}
+
+.nav-button, .btn-login, .btn-signup-horizontal {
+  background-color: #4338ca; /* Indigo-700 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover, .btn-login:hover, .btn-signup-horizontal:hover {
+  background-color: #6366f1; /* Indigo-500 */
+}
+
+.error-message {
+  color: #dc2626; /* Red-600 */
+  font-weight: 600;
+}
+
+.success-message {
+  color: #16a34a; /* Green-600 */
+  font-weight: 600;
+}
